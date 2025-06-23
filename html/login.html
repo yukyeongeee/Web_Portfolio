@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <script src="#"></script>
+  <script src="../script/login.js"></script>
+</head>
+<body>
+  <!--main logo-->
+  <header>
+    <a href="./main02.html"><img src="../img/main/logo.png" alt="logo"></a>
+  </header>
+  
+  <!--main menu-->
+  <nav>
+    <ul class="menu">
+      <li><img src="../img/main/burger.png" alt="burger"></li>
+      <li><a href="../html/sub01.html">About</a></li>
+      <li><a href="../html/sub02.html">Shop</a></li>
+      <li><a href="../html/sub03.html">대량주문</a></li>
+      <li><a href="../html/sub04.html">Community</a></li>
+    </ul>
+
+    <ul class="btn">
+      <li class="search">
+        <form action="" class="search-box" method="get">
+          <input type="text" class="search-txt" name="" placeholder="검색어를 입력하세요">
+          <button class="search-btn" type="submit">
+            <img src="../img/main/search.png" alt="search-icon">
+          </button>
+        </form>
+      </li>
+
+      <li><a href="./login.html"><img src="../img/main/bascket.png" alt="bascket"></a></li>
+      <li><a href="./login.html"><img src="../img/main/account.png" alt="account"></a></li>
+    </ul>
+  </nav>
+
+  <!--login box-->
+  <div class="login-container">
+    <h2>LOGIN</h2>
+    <form method="post" action="#" id="login-form">
+      <input type="text" name="userName" placeholder="ID">
+      <input type="text" name="userPassword" placeholder="PASSWORD">
+      <label for="remember-check">
+        <input type="checkbox" id="remember-check"> 아이디 저장
+      </label>
+      <a href="#">아이디 찾기</a>
+      <a href="#">비밀번호 찾기</a>
+      <input type="submit" value="로그인">
+    </form>
+  </div>
+
+  <!--SNS 계정 로그인-->
+  <div class="sns-container">
+    <a href="#"><img src="../img/login/naver login.png" alt="naver"></a><br>
+    <a href="#"><img src="../img/login/kakao login.png" alt="kakao"></a>
+  </div>
+</body>
+</html>
