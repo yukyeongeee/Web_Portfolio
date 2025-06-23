@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*main logo*/
+/*
+header {
+  border: 3px solid;
+}
+*/
+
+header img {
+  display: block;
+  width: 700px;
+  height: 80px;
+  margin: 80px auto;
+}
+
+/*main menu*/
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #366cd9;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+/*main menu-left*/
+nav .menu {
+  /*background-color: lightcoral;*/
+  width: 600px;
+  height: 60px;
+}
+
+nav .menu li {
+  float: left;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 30px;
+}
+
+nav .menu li img {
+  padding-top: 10px;
+}
+
+nav .menu li:hover {
+  color: #ffca1a;
+}
+
+/*
+nav .menu li:active {
+  color: #ffca1a;
+}
+*/
+
+/*main menu-right*/
+nav .btn {
+  /*background-color: lightcoral;*/ 
+  width: 600px;
+  height: 60px;
+  float: right;
+  margin-top: -60px;
+}
+
+nav .btn li {
+  float: left;
+  padding: 8px 0 0 20px;
+}
+
+.search {
+  margin-left: 185px;
+}
+
+.search-box {
+  width: 250px;
+  height: 45px;
+  border-bottom: 1px solid #fff;
+}
+
+.search-txt {
+  display: block;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 45px;
+}
+
+.search-txt::placeholder {
+  color: #fff;
+}
+
+.search-btn { 
+  border: none;
+  background: none;
+  outline: none;
+  float: right;
+  margin-top: -45px;
+}
+
+/*about bannner*/
+.about {
+  /*background-color: lightcoral;*/
+  width: 100%;
+  height: 1080px;
+  position: relative;
+}
+
+.about img {
+  width: 100%;
+  height: 1080px;
+} 
+
+.about h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*브랜드 소개글*/
+.brand-txt {
+  background-color: #F4DBC1;
+  width: 100%;
+  height: 500px;
+  margin-top: 120px;
+}
+
+.logo {
+  /*background-color: lightblue;*/
+  width: 50%;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+.logo img {
+  width: 600px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt {
+  /*background-color: lightgoldenrodyellow;*/
+  width: 50%;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+.txt p {
+  /*background-color: lightcoral;*/
+  width: 550px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*shop 페이지로 이동*/
+.shop {
+  width: 100%;
+  height: 460px;
+  /*background-color: lightcoral;*/
+  margin-top: 120px;
+  background-image: url(../img/sub01/01-banner.png);
+  background-image: 100%;
+}
+
+/*브랜드 위치*/
+.map-container {
+  background-color: #366cd9;
+  width: 100%;
+  height: 700px;
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+.map {
+  width: 1800px;
+  height: 450px;
+  margin: 40px auto;
+}
+
+.map-container .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container ul li {
+  color: #fff;
+}
+
+.map-container ul li #title {
+  color: #fff;
+}
+
+.map-container ul {
+  margin-left: 55px;
+  line-height: 36px;
+}
+
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #f2f2f2;
+  margin-top: 120px;
+}
+
+
+.icon {
+  /*background-color: lightcoral;*/
+  width: 100%;
+  height: 180px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+
+.icon ul li {
+  float: left;
+}
+
+.icon ul li:nth-child(1) img {
+  width: 600px;
+  height: 70px;
+  padding: 0 30px 0 50px;
+}
+
+.icon ul li:nth-child(2) img,
+.icon ul li:nth-child(3) img {
+  width: 40px;
+  height: 40px;
+  padding: 20px 0 0 20px;
+}
+
+#title {
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.info-1 {
+  margin-left: 80px;
+  width: 300px;
+  height: 200px;
+  float: left;
+  line-height: 36px;
+  color: #4d4d4d;
+}
+
+.info-2 {
+  margin-left: 80px;
+  width: 400px;
+  height: 200px;
+  float: left;
+  line-height: 36px;
+  color: #4d4d4d;
+}
+
+/*TOP 버튼*/
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  background-color: #fff;
+  border: 2px solid #dbdbdb;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
